@@ -2,92 +2,90 @@
 <html>
     <head>
         <title>
-            Tran Viet Thinh
+            Bảng tỷ giá
         </title>
         <style>
             h1 {
                 font-family: 'TimeNewRoman';
-                color: maroon;
+                color:black;
                 text-align: center;
             }
-            h3 {
+            table, td, th {
                 text-align: center;
             }
-            table {
-                font-family: arial, sans-serif;
-                border: 3px solid black;
-                width: 100%;
-                background-color: #90ED90;
-              }
-              
-              td, th {
-                border: 3px solid black;
-                text-align: left;
-                padding: 8px;
-                font-family: 'Times New Roman', Times, serif;
-                font-size: large;
-              }
-              
 
-              li {
-                color: blue;
+              table {
+                font-family:'Times New Roman', Times, serif;
+                font-size: large; 
+                border-collapse: collapse;
+                width: 100%;
+                background-color: lightgreen;
+              }
+              th {
+                background-color: cyan;
+                color: white;
+              }
+              td, th {
+                border:3px solid #000000;
+                padding: 8px;
+              }
+              
+              tr:nth-child(even) {
+                background-color: lightyellow;
+              }
+              td:hover {
+                background: red;
+                color: white;
+              }
+              TD#USD {
+                background-color: orange;
+
               }
 
         </style>
     </head>
     <body>
-        <h1><ins>Khoa CNTT HUMG</ins></h1>
-        <h3>Department</h3>
 
-            <blockquote>
+        <h1>Tỷ giá ngoại tệ</h1>
+
+
         <table>
-            <tr>
-            <th>STT</th>
-            <th>Departments</th>
-            <th>Address</th>
-            <th>Phone</th>
-            <th>Email</th>
+        <tr>
+            <th> Loại ngoại tệ</th>
+            <th>Mua vào</th>
+            <th>Bán ra</th>
+            <th>Chuyển khoản</th>
         </tr>
         <tr>
-            <td>1</td>
-            <td><ins><font color="#0000FF">
-                Tin học trắc địa
-                </font></ins></td>
-            <td>709 nhà 12 tầng</td>
-            <td>0909999999</td>
-            <td>tinhoctracdia@humg.edu.vn</td>
+            <td>AUD</td>
+            <td>15.400</td>
+            <td>15.550</td>
+            <td>15.466</td>
         </tr>
         <tr>
-            <td>2</td>
-            <td><ins><font color="#0000FF">
-                CNPM
-            </font></ins></td>
-            <td>702 nhà 12 tầng</td>
-            <td>0909555555</td>
-            <td>cnpm@humg.edu.vn</td>
+            <td>CND</td>
+            <td>18.300</td>
+            <td>18.4500</td>
+            <td>18.377</td>
         </tr>
         <tr>
-            <td>3</td>
-            <td><ins><font color="#0000FF">
-                Tin học kinh tế
-            </font></ins></td>
-            <td>708 nhà 12 tầng</td>
-            <td>0909666666</td>
-            <td>thkt@humg.edu.vn</td>
+            <td>JPD</td>
+            <td>190</td>
+            <td>220</td>
+            <td>207</td>
+        </tr>
+        <tr>
+            <td>HKD</td>
+            <td>1190</td>
+            <td>1220</td>
+            <td>1207</td>
+        </tr>
+        <tr>
+            <td id="USD">USD</td>
+            <td>23.400</td>
+            <td>23.550</td>
+            <td>23.466</td>
         </tr>
         </table>
-                </blockquote>
-
-        <h2>Chuyên ngành trong khoa</h2>
-        <ul>
-            <li>CNTT Địa học</li>
-            <li>CNPM</li>
-            <li>THKT</li>
-            <li>KHMT</li>
-            <li>HTTT</li>
-        </ul>
-        <h2>Trang web này của Pug</h2>
-        <img src="https://sieupet.com/sites/default/files/pictures/images/cho-pug-bieu-cam.jpg"  alt="Ảnh Pug">
-        
     </body>
 </html>
